@@ -10,7 +10,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -25,7 +25,7 @@
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"lint": "eslint src --ext ts",
-		"watch": "tsc -watch -p ./",
+		"watch": "fable-splitter --config splitter.config.js",
 		"pretest": "npm run compile && npm run lint",
 		"build": "fable-splitter --config splitter.config.js",
 		"test": "node ./out/test/runTest.js"

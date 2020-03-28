@@ -1,5 +1,4 @@
-﻿namespace fbVsCodeExt
+﻿module AdventExtension.Extension
 
-module Say =
-    let hello name =
-        printfn "Hello %s" name
+let activate _ =  
+    printfn "Fable extension is very very activated!"
