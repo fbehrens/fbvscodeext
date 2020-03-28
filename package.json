@@ -46,5 +46,9 @@
 		"mocha": "^7.0.1",
 		"typescript": "^3.7.5",
 		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {
+		"jest": "^25.2.3",
+		"markdown-it": "^10.0.0"
 	}
 }
