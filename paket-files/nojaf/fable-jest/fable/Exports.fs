@@ -22,8 +22,8 @@ let it(msg: string) (f: unit -> unit):unit = jsNative
 [<Global("it")>]
 let itDone(msg:string) (f: DoneStatic -> unit):unit = jsNative
 
-// [<Global("it")>]
-// let itAsync(msg: string) (f: unit -> Fable.Import.JS.Promise<'T>):unit = jsNative
+[<Global("it")>]
+let itAsync(msg: string) (f: unit -> JS.Promise<'T>):unit = jsNative
 
 [<Global("test")>]
 let test(msg: string) (f: unit -> unit):unit = jsNative
@@ -31,8 +31,8 @@ let test(msg: string) (f: unit -> unit):unit = jsNative
 [<Global("test")>]
 let testDone(msg:string) (f: DoneStatic -> unit):unit = jsNative
 
-// [<Global("test")>]
-// let testAsync(msg: string) (f: unit -> Fable.Import.JS.Promise<'T>):unit = jsNative
+[<Global("test")>]
+let testAsync(msg: string) (f: unit -> JS.Promise<'T>):unit = jsNative
 
 [<Emit("$0.mock")>]
 let getMock (x:obj):Mock<'A> = jsNative
