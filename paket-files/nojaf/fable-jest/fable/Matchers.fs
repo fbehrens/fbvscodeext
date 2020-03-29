@@ -117,7 +117,7 @@ module Jesto =
       |> Seq.iter (function
         | Test(s, fn) -> test s fn
         | TestDone(s, fn) -> testDone s fn
-        | TestAsync(s, fn) -> testAsync s fn
+        | TestAsync(s, fn) -> failwith "not implemented"  //testAsync s fn
       )
 
   /// Creates a fixture to pass into tests.
