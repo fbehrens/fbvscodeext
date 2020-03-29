@@ -25,10 +25,11 @@
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"lint": "eslint src --ext ts",
-		"watch": "fable-splitter --config splitter.config.js",
-		"pretest": "npm run compile && npm run lint",
+		"watch": "fable-splitter --config splitter.config.js --watch",
+		"pretest": "npm run build",
 		"build": "fable-splitter --config splitter.config.js",
-		"test": "node ./out/test/runTest.js"
+        "test": "jest",
+        "jest": "jest --watchAll"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.9.0",

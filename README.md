@@ -26,4 +26,8 @@ paket install
 # Downloading nojaf/fable-jest:60b934633faac4222683a097e73a59dec306543b fable/Matchers.fs to C:\Users\fb\code\kata\fbvscodeext\paket-files\nojaf\fable-jest\fable\Matchers.fs
 
 npm add --seve-dev "jest" "markdown-it"
+
+# in two console windows
+npm run watch
+npm run jest
 ```
