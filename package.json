@@ -44,7 +44,7 @@
 		"fable-compiler": "^2.4.19",
 		"fable-splitter": "^2.1.12",
 		"glob": "^7.1.6",
-		"mocha": "^7.0.1",
+		"mocha": "^10.2.0",
 		"typescript": "^3.7.5",
 		"vscode-test": "^1.3.0"
 	},
